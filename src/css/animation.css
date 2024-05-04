@@ -1,0 +1,59 @@
+.cabecalho .menu ul li a:hover {
+    color: #F58E00;
+    transition: 0.2s;
+}
+
+.home .informacoes .btn-wpp:hover {
+    box-shadow: 0px 0px 20px 2px #000000;
+    transition: 0.5s;
+}
+
+.about-us figure img:first-child:hover {
+    transform: translateY(-40px);
+    transition: 1s;
+}
+
+.about-us figure img:hover {
+    transform: translateY(-20px);
+    transition: 1s;
+}
+
+.carousel img:hover {
+    height: 360px;
+    transition: 1s;
+}
+
+.servicos .list-servico li:hover {
+    transform: translateY(-20px);
+    transition: 1s;
+}
+
+
+.whatsapp:hover {
+    background-color: #168600;
+    color: #ffffff;
+    transition: 0.5s;
+}
+
+.instagram:hover {
+    background: linear-gradient(225deg, #d92b7c 31%, #f2c51d 100%);
+    color: #ffffff;
+    transition: 0.5s;
+}
+
+i:active {
+    width: 40px;
+    height: 40px;
+}
+
+@media screen and (max-width: 950px) {
+    .servicos .list-servico li:hover {
+        transform: translateY(0px);
+        transition: 1s;
+    }
+
+    .carousel img:hover {
+        height: 280px;
+        transition: 1s;
+    }
+}

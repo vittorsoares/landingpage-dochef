@@ -1,0 +1,152 @@
+@media screen and (max-width: 950px) {
+    .home .informacoes {
+        margin: 0px 20px;
+        padding: 0px 7px;
+    }
+
+        .home .informacoes .btn-wpp{
+            width: 100px;
+        }
+
+    .about-us figure img {
+        height: 300px;
+        width: 200px;
+        margin-top: 100px;
+        object-fit: cover;
+    }
+
+    .about-us {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .about-us .about {
+        margin-left: 0px;
+        width: 100%;
+    }
+
+    .servicos .list-servico {
+        flex-direction: column;
+    }
+
+
+    .servicos .list-servico li {
+        height: 120px;
+        width: auto;
+        padding: 10px;
+        margin-top: 0px;
+    }
+
+    .servicos .list-servico li h3 {
+        font-size: 16px;
+    }
+
+    .fa-handshake,
+    .fa-mobile-alt,
+    .fa-box-open {
+        font-size: 20px;
+        color: #F58E00;
+    }
+
+    .carousel img {
+        width: calc(100% / 2);
+    }
+
+    .contact .container {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .contact .container .mapa {
+        width: 65%;
+        align-self: baseline;
+    }
+
+    .contact .container .send-msg .redes-sociais .rede {
+        width: 450px;
+    }
+
+    .rodape {
+        height: 100vh;
+    }
+
+    .rodape .container {
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width: 550px) {
+    .menu-off {
+        background-color: #000000;
+        display: flex;
+        align-items: center;
+        height: 70px;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        z-index: 1;
+    }
+
+    .menu-off ul {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+    .menu-off ul li a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 12px;
+    }
+
+    .cabecalho {
+        position: absolute;
+    }
+
+    .cabecalho .menu {
+        display: none;
+    }
+
+    .home .informacoes {
+        width: 80%;
+    }
+
+    .about-us figure img {
+        height: 200px;
+        width: 150px;
+        margin-top: 100px;
+        object-fit: cover;
+    }
+    .galeria{
+        padding: 20px;
+    }
+
+    .carousel img {
+        width: calc(100% / 3);
+        height: 250px;
+    }
+
+
+    .rodape .container {
+        gap: 5px;
+        padding: 88px;
+    }
+
+    .contact .container .send-msg .redes-sociais .rede {
+        width: 200px;
+        gap: 5px;
+    }
+
+    .contact .fa-whatsapp,
+    .contact .fa-instagram {
+        font-size: 16px;
+    }
+
+    .rodape .container div {
+        width: 100%;
+        font-size: 12px;
+    }
+
+}

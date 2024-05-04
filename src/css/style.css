@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*
+    font-family: "Berkshire Swash", serif;
+    font-family: "Roboto Condensed", sans-serif;
+} */
+
+.menu-off {
+    display: none;
+}
+
+body .img-background {
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    height: 70px;
+    width: 100%;
+    background-color: #000000;
+    z-index: 1;
+}
+
+.cabecalho .logo {
+    display: flex;
+    align-items: center;
+    font-family: "Berkshire Swash", serif;
+    color: #F58E00;
+    gap: 10px;
+}
+
+.cabecalho .logo h1 {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.cabecalho .logo img {
+    box-sizing: border-box;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    border-radius: 100%;
+}
+
+.cabecalho .menu ul {
+    display: flex;
+    gap: 10px;
+    font-size: 14px;
+}
+
+.cabecalho .menu ul li a {
+    color: #fffefc;
+}
+
+.home {
+    display: flex;
+    position: relative;
+    top: 50px;
+    height: 100vh;
+}
+
+.home .img-fundo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.home .informacoes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    height: 100%;
+    width: 508px;
+    margin-left: 88px;
+}
+
+
+.home .informacoes h1 {
+    font-family: "Berkshire Swash", serif;
+    color: #ffffff;
+    margin-bottom: 38px;
+    font-size: 50px;
+}
+
+.home .informacoes h2 {
+    font-family: "Berkshire Swash", serif;
+}
+
+.home .informacoes p {
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.home .informacoes .btn-wpp {
+    background-color: #570312;
+    color: #ffffff;
+    width: 200px;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 50px;
+    margin-top: 38px;
+}
+
+.about-us {
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 88px;
+}
+
+.about-us figure {
+    display: flex;
+    gap: 30px;
+}
+
+.about-us figure img {
+    height: 500px;
+    width: 250px;
+    margin-top: 50px;
+    object-fit: cover;
+}
+
+.about-us figure img {
+    transition: 1s;
+    box-shadow: 2px 2px 5px 2px #000000;
+}
+
+.about-us figure img:first-child {
+    transform: translateY(-20px);
+}
+
+.about-us .about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 600px;
+    margin-left: 80px;
+}
+
+.about-us .about h2 {
+    margin-bottom: 25px;
+}
+
+.about-us .about p {
+    color: #000000;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+
+.galeria {
+    background-color: #000000e7;
+    display: flex;
+    flex-direction: column;
+    padding: 0 88px;
+    height: 95vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.galeria h2 {
+    font-family: "Berkshire Swash", serif;
+    margin-bottom: 30px;
+}
+
+.galeria .img-fundo {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+}
+
+.wrapper {
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.wrapper i {
+    top: 100%;
+    height: 44px;
+    width: 44px;
+    color: #570312;
+    cursor: pointer;
+    font-size: 20px;
+    position: absolute;
+    text-align: center;
+    line-height: 44px;
+    background: transparent;
+    border: 2px solid #570312;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.1s linear;
+}
+
+.wrapper i:hover {
+    background-color: #570312;
+    color: #ffffff;
+    border: 2px solid #570312;
+}
+
+.wrapper i:first-child {
+    left: 0px;
+    display: none;
+    transform: translateY(-60%);
+}
+
+.wrapper i:last-child {
+    right: 0px;
+    transform: translateY(-60%);
+}
+
+.wrapper .carousel {
+    font-size: 0px;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+}
+
+.carousel.dragging {
+    cursor: grab;
+    scroll-behavior: auto;
+}
+
+.carousel.dragging img {
+    pointer-events: none;
+}
+
+.carousel img {
+    height: 340px;
+    object-fit: cover;
+    user-select: none;
+    margin-left: 14px;
+    width: calc(100% / 4);
+    transition: 1s;
+}
+
+.carousel img:first-child {
+    margin-left: 0px;
+}
+
+.servicos {
+    backdrop-filter: blur(6px);
+    box-sizing: border-box;
+    height: 630px;
+    text-align: center;
+    padding: 88px;
+    color: #ffffff;
+}
+
+.servicos .list-servico {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.servicos .list-servico li {
+    margin-top: 50px;
+    background-color: #191f29;
+    color: #ffffff;
+    height: 300px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+    border-radius: 15px;
+    transition: 1s;
+    box-shadow: 2px 2px 5px 2px #000000;
+}
+
+.servicos .list-servico li h3 {
+    font-size: 25px;
+}
+
+.fa-handshake,
+.fa-mobile-alt,
+.fa-box-open {
+    font-size: 40px;
+    color: #F58E00;
+}
+
+.contact {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.contact p {
+    margin: 30px 0px;
+}
+
+.fa-hamburger {
+    font-size: 40px;
+}
+
+.contact .fa-whatsapp,
+.contact .fa-instagram {
+    font-size: 40px;
+    margin-left: 30px;
+}
+
+.contact .container {
+    display: flex;
+    padding: 30px;
+}
+
+.contact .container .send-msg,
+.mapa {
+    width: 50%;
+}
+
+.contact .container .mapa iframe {
+    width: 100%;
+}
+
+.contact .container .send-msg a {
+    color: #000000;
+}
+
+.contact .container .send-msg .redes-sociais {
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact .container .send-msg .redes-sociais .rede {
+    display: flex;
+    align-items: center;
+    height: 55px;
+    width: 432px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    border: 2px solid #570312;
+    gap: 30px;
+}
+
+
+.rodape {
+    display: flex;
+    flex-direction: column;
+    background-color: #570312;
+    color: #ffffff;
+    font-weight: 100;
+    height: 400px;
+    line-height: 24px;
+}
+
+.rodape .container {
+    display: flex;
+    gap: 25px;
+    padding: 88px;
+}
+
+.rodape .container div {
+    width: 300px;
+}
+
+.rodape .container div h3 {
+    border-bottom: 1px solid #F58E00;
+    margin-bottom: 8px;
+    font-weight: 300;
+}
+
+.rodape .container div:last-child {
+    ul {
+        display: flex;
+        gap: 60px;
+    }
+}
+
+.rodape p {
+    align-self: flex-end;
+    margin-right: 88px;
+}
